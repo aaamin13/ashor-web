@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return {
     title: { default: "Ashor | আসর", template: "%s | Ashor" },
     description: `${ui.tagline[lang]} ${ui.mission[lang]}`,
-    metadataBase: new URL("https://www.ashoratx.com"),
+    metadataBase: new URL("https://ashoratx.com"),
   };
 }
 
