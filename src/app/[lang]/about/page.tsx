@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { isLang, ui, organizers, CONTACT_EMAIL, SOCIAL } from "@/lib/content";
+import { isLang, ui, organizers, SOCIAL } from "@/lib/content";
 
 export const metadata = { title: "About | আমাদের কথা" };
 
@@ -21,11 +21,11 @@ export default async function About({ params }: { params: Promise<{ lang: string
         ))}
       </ul>
       <h2 className="mt-10 text-2xl font-semibold text-forest">{ui.contact[lang]}</h2>
-      <p className="mt-3">
-        <a className="text-accent hover:underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-      </p>
-      <p>
-        <a className="text-accent hover:underline" href={SOCIAL.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+      <p className="mt-3 text-muted">{ui.contactText[lang]}</p>
+      <p className="mt-2">
+        <a className="text-accent hover:underline" href={SOCIAL.facebook} target="_blank" rel="noopener noreferrer">
+          {ui.messageUs[lang]} →
+        </a>
       </p>
     </div>
   );

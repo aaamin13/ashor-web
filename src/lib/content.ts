@@ -5,7 +5,6 @@ export const isLang = (l: string): l is Lang => l === "en" || l === "bn";
 export type T = Record<Lang, string>;
 
 export const SOCIAL = { facebook: "https://www.facebook.com/ashoratx/" };
-export const CONTACT_EMAIL = "info@ashoratx.com"; // TODO: confirm
 
 export const ui = {
   nav: {
@@ -73,6 +72,11 @@ export const ui = {
   aboutTitle: { en: "About Us", bn: "আমাদের কথা" },
   organizers: { en: "Organizers", bn: "আয়োজক" },
   contact: { en: "Contact", bn: "যোগাযোগ" },
+  contactText: {
+    en: "Message us on Facebook for questions, collaborations and updates.",
+    bn: "প্রশ্ন, সহযোগিতা ও খবরের জন্য ফেসবুকে আমাদের মেসেজ করুন।",
+  },
+  messageUs: { en: "Message Ashor on Facebook", bn: "ফেসবুকে আসরকে মেসেজ করুন" },
   follow: { en: "Follow Ashor on Facebook", bn: "ফেসবুকে আসর" },
   rights: { en: "Ashor, Austin TX", bn: "আসর, অস্টিন টেক্সাস" },
   switchTo: { en: "বাংলা", bn: "English" },
