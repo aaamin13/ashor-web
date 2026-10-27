@@ -20,7 +20,7 @@ export const ui = {
   },
   mission: {
     en: "Ashor is an Austin, Texas based music platform promoting Bangla music of every genre through live performances and theme-based shows, featuring mostly — but not only — Austin's own musicians.",
-    bn: "আসর অস্টিন, টেক্সাসভিত্তিক একটি সংগীত প্ল্যাটফর্ম। আমরা লাইভ পরিবেশনা ও থিমভিত্তিক অনুষ্ঠানের মাধ্যমে সব ধারার বাংলা গানকে তুলে ধরি — প্রধানত অস্টিনের শিল্পীদের নিয়ে, তবে শুধু তাঁদের নয়।",
+    bn: "আসর অস্টিন, টেক্সাসভিত্তিক একটি সংগীত প্ল্যাটফর্ম। আমরা লাইভ পরিবেশনা ও থিমভিত্তিক অনুষ্ঠানের মাধ্যমে সব ধারার বাংলা গানকে তুলে ধরি — প্রধানত অস্টিনের শিল্পীদের নিয়ে।",
   },
   whatWeDo: { en: "What we do", bn: "আমরা যা করি" },
   pillars: [
