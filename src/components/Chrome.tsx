@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Lang, ui, SOCIAL } from "@/lib/content";
@@ -13,8 +14,14 @@ export function Header({ lang }: { lang: Lang }) {
   return (
     <header className="sticky top-0 z-10 border-b border-line bg-paper/90 backdrop-blur">
       <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3">
-        <Link href={`/${lang}`} className="text-2xl font-bold text-forest">
-          আসর <span className="text-base font-normal text-muted">Ashor</span>
+        <Link href={`/${lang}`} aria-label="Ashor home" className="shrink-0">
+          <Image
+            src="/images/ashor-logo.png"
+            alt="আসর Ashor"
+            width={1920}
+            height={1080}
+            className="h-12 w-auto"
+          />
         </Link>
         <Link
           href={swapped}

@@ -18,6 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     title: { default: "Ashor | আসর", template: "%s | Ashor" },
     description: `${ui.tagline[lang]} ${ui.mission[lang]}`,
     metadataBase: new URL("https://ashoratx.com"),
+    icons: {
+      icon: "/images/ashor-favicon.png",
+    },
   };
 }
 
